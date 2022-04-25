@@ -51,7 +51,7 @@ public class MontyHall{
 		int trueCount = 0;
 		int falseCount = 0;
 		for(int plays = 0; plays < 10000; plays++) {
-			boolean result = game(false);
+			boolean result = game(true); //if the input boolean is true, the contestant will switch doors
 			if(result == true)
 				trueCount++;
 			else
